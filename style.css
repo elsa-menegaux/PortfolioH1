@@ -1,0 +1,454 @@
+/* Installation typos */
+
+@font-face {
+  font-family: "Playfair";
+  src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "July01";
+  src: url(fonts/bold_j.ttf);
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url(fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Playfair";
+}
+
+/* Couleur, marges globales */
+body {
+  background-color: #004643;
+  margin: 0;
+  padding: 0;
+}
+
+/* Taille et mise en page du header */
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.titlePortfolio {
+  font-size: 36px;
+  font-weight: 800;
+  color: #faf4d3;
+  margin-left: 80px;
+}
+
+/* Nav header (cliquables, hover blanc)*/
+a {
+  color: #faf4d3;
+  text-decoration: none;
+}
+
+nav {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #faf4d3;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Bandeau typo avec filtre  */
+#bandeau {
+  height: 600px;
+  width: 100vw;
+  background-image: url(images/Green\ sand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredTitle {
+  font-size: 158px;
+  font-weight: 900;
+  margin-top: 58px;
+  color: #faf4d3;
+  text-align: center;
+}
+
+/* A Propos de moi*/
+.APropos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#titleAPropos {
+  position: absolute;
+  top: 36px;
+  left: 100px;
+  font-family: "Playfair";
+  color: #faf4d3;
+  font-size: 40px;
+  font-weight: 700;
+  transform: translate(-50%, 0);
+}
+
+.presentationBox {
+  background-color: #0c1618;
+  margin-top: 100px;
+  margin-right: 80px;
+  padding: 120px 80px 50px 80px;
+  display: inline-block;
+  max-width: 77.5%;
+  border-radius: 50px;
+  position: relative;
+}
+
+.presentationBox p {
+  margin: 0;
+  color: #faf4d3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#HETIC {
+  text-decoration: none;
+}
+
+#HETIC:hover {
+  color: white;
+}
+
+/* Projets : Heuditus et Hackathon */
+
+.projectsSection {
+  height: 970px;
+  position: relative;
+}
+
+.sectionTitle {
+  font-family: "Playfair";
+  color: #faf4d3;
+  margin-left: 80px;
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Ligne de séparation */
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: calc(20% + 10px);
+  transform: translateY(-50%);
+  width: 55%;
+  height: 1px;
+  background-color: #faf4d3;
+}
+
+#titleProjects {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  font-family: "Playfair";
+  color: #faf4d3;
+  font-size: 40px;
+  font-weight: 700;
+  transform: translate(-50%, 0);
+}
+
+#titleProjects::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: calc(100% + 100px);
+  transform: translateY(-50%);
+  width: 900px;
+  height: 1px;
+  background-color: #faf4d3;
+}
+
+/* Heuditus */
+.projectsBoxHeuditus {
+  position: relative;
+  top: 150px;
+}
+
+/* Logo Heuditus (on peut cliquer dessus, hover blanc)*/
+.logoHeuditusBox {
+  background-color: #0c1618;
+  max-width: 70%;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding: 100px 200px 100px 80px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  color: #faf4d3;
+  transition: color 0.3s ease-in-out;
+}
+
+.logoHeuditusBox:hover {
+  color: white;
+}
+
+.July {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "July01";
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.Josefin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Josefin";
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* Topo Heuditus (cliquable, hover blanc) */
+.heuditusTextContainer {
+  position: absolute;
+  top: 80px;
+  left: 60%;
+  transform: translate(-50%, 0);
+  color: #faf4d3;
+  line-height: 1.5;
+  max-width: 640px;
+  transition: color 0.3 ease-in-out;
+}
+
+.heuditusTextContainer:hover {
+  color: white;
+}
+
+.heuditusTitle {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.heuditusDescription {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Hackathon */
+
+.projectsBoxHackathon {
+  position: relative;
+  margin-top: 200px;
+}
+
+/* Background Hackathon (cliquable, hover image)*/
+.hackathonBackground {
+  position: absolute;
+  right: 80px;
+  width: 50%;
+  height: 400px;
+  background-color: #0c1618;
+  background-image: url(images/Avatar.png);
+  background-repeat: no-repeat;
+  background-position: right 50px center;
+  background-size: 50%;
+  border-radius: 50px;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.hackathonBackground:hover {
+  background-image: url(images/Avatar.png), url(images/wave\ background.webp);
+  background-repeat: no-repeat;
+  background-position: right 50px center, center center;
+  background-size: 50%, cover;
+  border-radius: 50px;
+  opacity: 1, 0.3;
+}
+
+/* Hackathon topo (titre cliquable à termen hover blanc) */
+.hackathonTextContainer {
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  transform: translate(-50%, 0);
+  font-family: "Playfair";
+  color: #faf4d3;
+  line-height: 1.5;
+  max-width: 640px;
+}
+
+.hackathonTitle {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hackathonTitle:hover {
+  color: white;
+}
+
+.hackathonDescription {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Contact (linkedin et github cliquables)*/
+.contactSection {
+  margin-left: 80px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.liens {
+  margin-top: 50px;
+  font-family: "Playfair";
+  font-size: 20px;
+  list-style: none;
+  color: #faf4d3;
+  font-weight: 600;
+}
+
+#smile {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Page dédiée à Heuditus */
+.heuditusAccueilContainer {
+  background-image: url(images/accueilHeuditus.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#heuditusPageTitle {
+  font-family: "Playfair";
+  color: #faf4d3;
+  margin-left: 160px;
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heuditusPageText {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-family: "Playfair";
+  color: #faf4d3;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Slider page Heuditus */
+.sliderContainer {
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+
+.slider {
+  position: relative;
+  height: 700px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.slider img {
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #faf4d3;
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: 20px;
+}
+
+.rightArrow {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: white;
+}
+
+/* footer */
+footer {
+  background-color: #0c1618;
+  color: #faf4d3;
+  font-family: "Playfair";
+  font-size: 20px;
+  font-weight: 500;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+footer a img {
+  margin-right: 10px;
+  height: 30px;
+}
+
+.github {
+  font-size: 2em;
+}
+
+.github i {
+  color: #faf4d3;
+  transition: all 0.2s ease-in-out;
+}
+
+.github i:hover {
+  transform: scale(1.2);
+}
